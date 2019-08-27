@@ -1,45 +1,25 @@
 class Book
+    #both getter and server in attr_accessor. 
+    attr_accessor :author, :page_count, :genre
+    attr_reader :title 
     #initializing 
     def initialize(title)
         @title=title 
     end 
-    #getter
-    def title
-        @title 
-    end 
-    #setter
-    def author=(author)
-        @author=author
-    end 
-    #getter 
-    def author
-        @author 
-    end 
-    #setter 
-    def page_count=(page_count)
-        @page_count=page_count
-    end 
-    #getter 
-    def page_count
-        @page_count
-    end 
-    #setter 
-    def genre=(genre)
-        @genre=genre
-    end 
-    #getter
-    def genre
-        @genre 
-    end 
+    #below transforms into line 4
+   
+    # #getter
+    # def title
+    #     @title 
+    # end 
 
     def turn_page
         puts "Flipping the page...wow, you read fast!"
     end 
-    
+
+    #the code below is what can be coded after our method turn the page.
     book = Book.new("Some Title")
     book.turn_page
-
-
 end 
 
 
