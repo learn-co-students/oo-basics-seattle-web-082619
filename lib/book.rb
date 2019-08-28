@@ -2,6 +2,7 @@ class Book
     #both getter and server in attr_accessor. 
     attr_accessor :author, :page_count, :genre
     attr_reader :title 
+    
     #initializing 
     def initialize(title)
         @title=title 
